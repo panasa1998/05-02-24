@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            margin-left: 400px;
+        }
+        .menu{
+            display: inline-block;
+            border: 1px white solid;
+            padding: 10px;
+            width: 500px;
+            height: 40px;
+            background-color:white;
+            
+        }
+        .text{
+            display: inline-block;
+            position: relative;
+            left: 150px;
+            bottom: 40px;
+            font-size: 30px;
+        }
+        .missed{
+            display: inline-block;
+            padding-left: 310px;
+            position: relative;
+            bottom: 35px;
+        }
+        .map{
+            display: flex;
+            position: relative;
+            bottom: 70px;
+        }
+        .icon{
+            display: inline-block;
+            margin: 35px;
+            position: relative;
+            bottom: 130px;
+        }
+        .add-2{
+            position: relative;
+            bottom: 150px; 
+            border:none;
+            border-bottom: 2px solid;
+            width: 520px;          
+        }
+        .add-3{
+            position: relative;
+            bottom: 120px; 
+            border:none;
+            border-bottom: 2px solid;
+            width: 520px;          
+        }
+        .proceed{
+            border: 1px solid greenyellow;
+            background-color: greenyellow;
+            height:40px;
+            width: 520px;
+            position: relative;
+            bottom: 110px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <img src="../menu-icon-18.png" height="40px" width="40px">
+            <div class="text">Where are you
+                <div class="missed">
+                    <img src="../missedcall-logo.png" height="40px" width="40px">
+                </div>
+            </div>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.695757828514!2d78.31403641074569!3d17.47427008335867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb937e0719e3e5%3A0x6fa34bf287e426c6!2sTATA%20PURIFIED%20DRINKING%20WATER!5e0!3m2!1sen!2sin!4v1707307742970!5m2!1sen!2sin" width="520" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div>
+            <div class="icon"><img src="../office-icon.webp" height="50px" width="50px"><br><span><b>Office</b></span></div>
+            <div class="icon"><img src="../homo-icon.png" height="50px" width="50px"><br><span><b>Home</b></span></div>
+            <div class="icon"><img src="../shop-icon.png" height="50px" width="50px"><br><span><b>Shop</b></span></div>
+            <div class="icon"><img src="../hotel-icon.png" height="50px" width="50px"><br><span><b>Hotel</b></span></div>
+        </div>
+        <form class="add-2"> 
+           <label for="add"></label>
+           <input type="text" id="add" name="flat.no" placeholder="Flat.No">
+        </form >
+        <form class="add-3">
+            <label for="add-1"></label>
+            <input type="text" id="add-1" name="address" placeholder="Address">
+        </form>
+           <div class="proceed">Proceed</div>     
+    </div>
+</body>
+</html>
